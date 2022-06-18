@@ -7,7 +7,9 @@
   --primary-beige:#C7A68B;
   --primary-white:#fff;
 }
-
+body{
+font-family: 'League Spartan', sans-serif; 
+}
 
 
 /* navbar-and-header */
@@ -59,7 +61,6 @@
   }
 }
 .header h1{
-  font-family: 'League Spartan', sans-serif;
   color:var(--primary-orange);
 }
 .header .typed {
@@ -73,6 +74,10 @@
   color:var(--primary-beige);
   font-size: 30px;
   margin:0 10px;
+  transition: all .6s ease-in;
+}
+.header .social a:hover{
+  color:var(--primary-orange);
 }
 /*About ME  */
 .about-me{
@@ -86,6 +91,10 @@
   width: 500px;
     height:620px;
     margin: 0 20px;
+    transition: .6s ease-in;
+}
+#my-photo:hover{
+  transform: scale(1.05);
 }
 .about-me .row-item{
   width: 80% ;
@@ -126,5 +135,120 @@
 background-color: var(--primary-grey);
 color:var(--primary-white)
 }
-
 /* Skills */
+.skills{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.skills .bg-image{
+  position: absolute;
+  height:1000px;
+  top: -300px;
+  right: 0;
+  z-index:-3;
+}
+.skills .main-info{
+  width: 90%;
+  padding:15px 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:0 20px;
+  margin-right:36px;
+  z-index: 11;
+
+}
+@media(max-width:900px){
+  .skills .main-info{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .skills .skills-photo{
+    width:500px;
+  
+  }
+}
+.skills .main-info .right-side{
+  display: flex;
+  justify-content: center;
+}
+.skills .main-info .prog{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills .main-info .bottom{
+  display: flex;
+}
+.skills .main-info h2{
+  margin:20px 0;
+  color:var(--primary-orange);
+  text-transform: uppercase;
+}
+.skills .main-info .lang{
+  color:var(--primary-orange);
+  margin:25px 0;
+}
+.skills .main-info .lang:hover{
+  color:var(--primary-grey);
+}
+
+.skills .skills-photo{
+  width:400px;
+  height:520px;
+  transition: .6s ease-in;
+}
+.skills .skills-photo:hover{
+  transform: scale(1.05);
+}
+/* Works */
+.works{
+  width: 100%;
+  background: url(./works-bg.png) no-repeat center left;
+  padding:25px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.works .infos{
+ width: 90%;
+ display: flex ;
+ justify-content: space-between;
+ align-items: center;
+}
+ @media(max-width:900px){
+  .works .infos{
+    flex-direction: column;
+   }
+  } 
+.infos .work-image{
+  width: 424.17px;
+  height: 571.96px;
+  margin-right: 15px;
+  transition: .6s ease-in;
+}
+.infos .work-image:hover{
+   transform: scale(1.05);
+}
+
+.infos .work-info h2{
+     text-transform: uppercase;
+     color:var(--primary-orange);
+     font-size: 28px;
+     margin:15px 0;
+     padding:15px 0;
+}
+.infos .work-info h3{
+  color:var(--primary-orange);
+  font-size: 24px;
+  margin:10px 0;
+}
+.infos .work-info p{
+  color:var(--primary-grey);
+  font-size: 20px;
+  margin:10px 0;
+  text-align: justify;
+}
