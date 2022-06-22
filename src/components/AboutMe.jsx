@@ -1,9 +1,9 @@
 import React from 'react';
-import myPhoto from '../my-photo.png'
+import myPhoto from '../my-photo.jpg'
 const AboutMe = () => {
     return (
-        <div className='about-me '>
-          <div className="row-item ">
+        <div className="about-me">
+          <div className="row-item">
             <img src={myPhoto} id='my-photo'/>
             <div className="col-item ">
                <h2>About Me</h2>
